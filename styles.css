@@ -45,3 +45,8 @@ footer {
     background: #f3d1f4;
     margin-top: 2rem;
 }
+logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}

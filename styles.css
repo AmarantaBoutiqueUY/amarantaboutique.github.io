@@ -11,25 +11,57 @@ header {
     padding: 2rem;
 }
 
+.logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0 0.2rem;
+    color: #4a2e60;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
 .hero {
     text-align: center;
     padding: 2rem;
     background: #fdeaff;
 }
 
+h2 {
+    color: #4a2e60;
+    margin-bottom: 0.5rem;
+}
+
 .btn {
     display: inline-block;
-    background: #c49ec4;
+    background: #a678aa;
     color: white;
     padding: 0.7rem 1.2rem;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 12px;
     margin-top: 1rem;
+    transition: background 0.3s ease;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: #8c5e91;
 }
 
 #catalogo {
     padding: 2rem;
     text-align: center;
+    background: #fff0fb;
 }
 
 .producto {
@@ -46,16 +78,16 @@ header {
     border-radius: 10px;
 }
 
+#sobre {
+    background: #fce6f9;
+    padding: 2rem;
+    text-align: center;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
     background: #f3d1f4;
     margin-top: 2rem;
-}
-
-.logo {
-    max-width: 150px;  /* Ajusta el tamaño del logo */
-    height: auto;
-    display: block;    /* Asegura que se centre */
-    margin: 0 auto 10px;  /* Centra la imagen y le da un margen inferior */
+    font-size: 0.9rem;
 }

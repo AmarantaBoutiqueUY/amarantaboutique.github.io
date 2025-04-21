@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding-top: 120px; /* Espacio para header fijo */
   font-family: 'Poppins', sans-serif;
   background-color: #F4F4F4;
   color: #333;
@@ -46,6 +47,9 @@ nav a:hover {
 .social-icons {
   display: flex;
   gap: 12px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .social-icons a {
@@ -61,7 +65,6 @@ nav a:hover {
 /* HERO SECCIÓN */
 .hero {
   position: relative;
-  margin-top: 100px;
   height: 80vh;
   background: url('imagen.jpg') no-repeat center center;
   background-size: cover;
@@ -168,5 +171,9 @@ footer a:hover {
 
   .hero p {
     font-size: 1rem;
+  }
+
+  .social-icons {
+    margin-top: 10px;
   }
 }

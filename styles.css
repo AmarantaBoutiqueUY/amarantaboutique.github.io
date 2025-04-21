@@ -6,8 +6,11 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     background: #f3d1f4;
-    text-align: center;
     padding: 2rem;
 }
 
@@ -18,6 +21,38 @@ header {
     margin: 0 auto 10px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5e3f71;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #8c5e91;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    color: #5e3f71;
+    font-size: 1.4rem;
+}
+
+.social-icons a:hover {
+    color: #8c5e91;
 }
 
 h1 {
@@ -36,9 +71,23 @@ p {
     background: #fdeaff;
 }
 
-h2 {
-    color: #4a2e60;
-    margin-bottom: 0.5rem;
+.hero h2 {
+    font-size: 2.5rem;
+    color: #B850A3;
+    margin-bottom: 20px;
+    font-weight: 700;
+    filter: none;
+    text-shadow: none;
+    opacity: 1;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+    filter: none;
+    text-shadow: none;
+    opacity: 1;
 }
 
 .btn {
@@ -90,4 +139,41 @@ footer {
     background: #f3d1f4;
     margin-top: 2rem;
     font-size: 0.9rem;
+}
+
+footer a {
+    display: inline-block;
+    margin: 8px;
+    color: #B850A3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #E26A8D;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        margin-top: 180px;
+        padding: 100px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
 }

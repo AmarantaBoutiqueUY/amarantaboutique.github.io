@@ -5,24 +5,19 @@ body {
   color: #333;
 }
 
-/* HEADER */
+/* ENCABEZADO */
 header {
   position: fixed;
   top: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  z-index: 1000;
-}
-
-.header-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: auto;
-  padding: 15px 20px;
+  padding: 15px 30px;
+  z-index: 1000;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -31,10 +26,10 @@ header {
 
 nav {
   display: flex;
-  gap: 25px;
+  gap: 30px;
   justify-content: center;
-  flex-wrap: wrap;
   flex: 1;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -124,7 +119,6 @@ nav a:hover {
   background-color: #E26A8D;
 }
 
-/* SECCIONES */
 section {
   padding: 80px 20px;
   text-align: center;
@@ -146,11 +140,10 @@ section {
 
 #sobre {
   background: #fce6f9;
-  padding: 2rem;
+  padding: 100px 2rem 2rem 2rem;
   text-align: center;
 }
 
-/* FOOTER */
 footer {
   background-color: #fff;
   text-align: center;
@@ -171,16 +164,17 @@ footer a:hover {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .header-container {
+  header {
     flex-direction: column;
-    gap: 15px;
     align-items: center;
+    gap: 10px;
     text-align: center;
   }
 
   nav {
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .hero h2 {
@@ -189,5 +183,9 @@ footer a:hover {
 
   .hero p {
     font-size: 1rem;
+  }
+
+  .hero-overlay {
+    padding: 20px;
   }
 }

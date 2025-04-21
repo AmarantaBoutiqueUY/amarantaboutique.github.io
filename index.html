@@ -14,7 +14,7 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #FFF1F3;
+      background-color: #F4F4F4;
       color: #333;
     }
 
@@ -27,7 +27,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 20px;
+      padding: 15px 30px;
       z-index: 1000;
     }
 
@@ -35,29 +35,44 @@
       height: 60px;
     }
 
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
     nav a {
-      margin: 0 15px;
       text-decoration: none;
-      color: #E26A8D;
+      color: #B850A3;
       font-weight: 500;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #E26A8D;
     }
 
     .social-icons a {
       margin-left: 12px;
+      color: #B850A3;
+      font-size: 1.8rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
       color: #E26A8D;
-      font-size: 1.5rem;
     }
 
     .hero {
-      margin-top: 100px;
-      background: linear-gradient(rgba(255,241,243,0.6), rgba(255,241,243,0.6)), url('https://images.unsplash.com/photo-1611164817110-bec3892ac42f?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8MTB8fGZhbGwtcm9saW5nJTIwbW9kZWx8ZW58MHx8fHwxNjgwNjg0NzEy&ixlib=rb-1.2.1&q=80&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhY2h8MTB8fGZhbGwtcm9saW5nJTIwbW9kZWx8ZW58MHx8fHwxNjgwNjg0NzEy') no-repeat center/cover;
+      margin-top: 120px;
+      background: linear-gradient(rgba(255,241,243,0.6), rgba(255,241,243,0.6)), url('https://images.unsplash.com/photo-1632245070838-d5f6e573ca19?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8Mjh8fGZhbGwtcm9saW5nJTIwbW9kZWx8ZW58MHx8fHwxNjgwNzYwOTk0&ixlib=rb-1.2.1&q=80&fm=jpg') no-repeat center/cover;
       text-align: center;
       padding: 120px 20px;
     }
 
     .hero h2 {
-      font-size: 2.5rem;
-      color: #E26A8D;
+      font-size: 3rem;
+      color: #B850A3;
       margin: 0;
     }
 
@@ -70,8 +85,8 @@
     .btn {
       display: inline-block;
       margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #E26A8D;
+      padding: 12px 24px;
+      background-color: #B850A3;
       color: white;
       border: none;
       border-radius: 8px;
@@ -81,17 +96,17 @@
     }
 
     .btn:hover {
-      background-color: #d55577;
+      background-color: #E26A8D;
     }
 
     section {
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
 
     .producto img {
       width: 100%;
-      max-width: 300px;
+      max-width: 320px;
       border-radius: 12px;
     }
 
@@ -105,8 +120,12 @@
     footer a {
       display: inline-block;
       margin: 8px;
-      color: #E26A8D;
+      color: #B850A3;
       text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #E26A8D;
     }
 
     @media (min-width: 768px) {
@@ -119,6 +138,13 @@
         margin: 20px;
       }
     }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   </style>
 </head>
 
@@ -129,7 +155,7 @@
     <nav>
       <a href="#hero">Inicio</a>
       <a href="#catalogo">Catálogo</a>
-      <a href="#sobre">Sobre</a>
+      <a href="#sobre">Sobre nosotros</a>
       <a href="#contacto">Contacto</a>
     </nav>
     <div class="social-icons">
@@ -155,7 +181,7 @@
   </section>
 
   <section id="sobre">
-    <h2>Sobre Amaranta</h2>
+    <h2>Sobre nosotros</h2>
     <p>Amaranta Boutique nace con la idea de ofrecerte una tienda online pensada para mujeres reales, con productos que combinan estilo, comodidad y calidad.</p>
   </section>
 

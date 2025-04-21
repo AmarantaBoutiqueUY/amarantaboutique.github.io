@@ -4,16 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Amaranta Boutique UY</title>
+  <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #F4F4F4;
       color: #333;
@@ -23,31 +19,32 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.95);
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 20px;
+      padding: 15px 30px;
       z-index: 1000;
       flex-wrap: wrap;
     }
 
     .logo {
-      height: 50px;
+      height: 60px;
     }
 
     nav {
       display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
+      gap: 30px;
+      flex: 1;
+      justify-content: center;
     }
 
     nav a {
       text-decoration: none;
       color: #B850A3;
       font-weight: 500;
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       transition: color 0.3s;
     }
 
@@ -57,12 +54,13 @@
 
     .social-icons {
       display: flex;
-      gap: 15px;
+      align-items: center;
     }
 
     .social-icons a {
+      margin-left: 12px;
       color: #B850A3;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       transition: color 0.3s;
     }
 
@@ -71,32 +69,35 @@
     }
 
     .hero {
-      margin-top: 80px;
-      height: 90vh;
-      background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.85)),
-        url('https://images.unsplash.com/photo-1593032457869-6a6d16846403?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      margin-top: 120px;
+      padding: 140px 20px;
+      background: url('https://images.unsplash.com/photo-1622335786285-53dc7d294fd5?auto=format&fit=crop&w=1170&q=80') no-repeat center top;
+      background-size: cover;
+      background-repeat: no-repeat;
       text-align: center;
-      padding: 0 20px;
+      color: #333;
+      filter: blur(3px); /* Filtro de desenfoque ajustado */
     }
 
     .hero h2 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       color: #B850A3;
-      margin-bottom: 10px;
+      margin: 0;
+      text-shadow: 1px 1px 4px rgba(255,255,255,0.8);
     }
 
     .hero p {
-      font-size: 1.1rem;
-      color: #444;
-      max-width: 500px;
+      font-size: 1.2rem;
+      margin: 10px 0;
+      background-color: rgba(255,255,255,0.7);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
     }
 
     .btn {
-      margin-top: 20px;
+      display: inline-block;
+      margin-top: 15px;
       padding: 12px 24px;
       background-color: #B850A3;
       color: white;
@@ -111,11 +112,39 @@
       background-color: #E26A8D;
     }
 
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .producto img {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 12px;
+    }
+
+    footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid #eee;
+    }
+
+    footer a {
+      display: inline-block;
+      margin: 8px;
+      color: #B850A3;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #E26A8D;
+    }
+
     @media (max-width: 768px) {
       header {
         flex-direction: column;
         align-items: center;
-        text-align: center;
         gap: 10px;
       }
 
@@ -124,16 +153,24 @@
         flex-wrap: wrap;
       }
 
+      .hero {
+        margin-top: 180px;
+        padding: 100px 20px;
+        background-position: center top;
+      }
+
       .hero h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
 
       .hero p {
         font-size: 1rem;
+        padding: 8px 16px;
       }
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -145,7 +182,7 @@
       <a href="#contacto">Contacto</a>
     </nav>
     <div class="social-icons">
-      <a href="https://www.instagram.com/amarantaboutiqueuy" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.instagram.com/amarantaboutiqueuy?igsh=MWRzMzNmeDZiejFwdQ==" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://www.facebook.com/share/1ESHpDBLkr/" target="_blank"><i class="fab fa-facebook"></i></a>
     </div>
   </header>
@@ -155,6 +192,28 @@
     <p>Aquí encontrarás justo lo que estás buscando: ropa única y cosméticos para resaltar tu belleza.</p>
     <a href="#catalogo" class="btn">Ver productos</a>
   </section>
+
+  <section id="catalogo">
+    <h2>Catálogo</h2>
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x400?text=Producto+1" alt="Producto 1">
+      <h3>Vestido Primavera</h3>
+      <p>$1.290</p>
+      <a class="btn" href="https://wa.me/59891646801?text=Hola!%20Estoy%20interesada%20en%20el%20Vestido%20Primavera.%20¿Está%20disponible?">Lo quiero</a>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre nosotros</h2>
+    <p>Amaranta Boutique nace con la idea de ofrecerte una tienda online pensada para mujeres reales, con productos que combinan estilo, comodidad y calidad.</p>
+  </section>
+
+  <footer id="contacto">
+    <p>© 2025 Amaranta Boutique. Todos los derechos reservados.</p>
+    <a href="https://wa.me/59891646801" target="_blank">WhatsApp</a>
+    <a href="https://www.instagram.com/amarantaboutiqueuy?igsh=MWRzMzNmeDZiejFwdQ==" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/share/1ESHpDBLkr/" target="_blank">Facebook</a>
+  </footer>
 
 </body>
 </html>

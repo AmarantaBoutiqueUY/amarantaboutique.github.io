@@ -1,25 +1,88 @@
-/* Catálogo - Estilo para las imágenes y productos */
+/* General */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+}
+
+header {
+  background-color: #B850A3;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  width: 150px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+}
+
+.hero {
+  background: url('hero-image.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 150px 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background-color: #B850A3;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #E26A8D;
+}
+
+/* Catálogo */
 #catalogo {
+  padding: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
-  padding: 40px 0;
+  justify-content: center;
 }
 
 .producto {
+  background-color: white;
+  border-radius: 10px;
   border: 1px solid #e0cbe0;
-  padding: 1rem;
-  border-radius: 15px;
-  max-width: 280px;
-  margin: 1rem;
-  background: #fff;
+  padding: 20px;
   text-align: center;
+  width: 280px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .producto img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
@@ -28,7 +91,7 @@
 .producto h3 {
   font-size: 1.2rem;
   color: #B850A3;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .producto p {
@@ -38,31 +101,43 @@
 }
 
 .producto .btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
   background-color: #B850A3;
   color: white;
-  border: none;
-  border-radius: 8px;
+  padding: 10px 20px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
 }
 
 .producto .btn:hover {
   background-color: #E26A8D;
 }
 
-/* Media Queries - Ajustes para pantallas más pequeñas */
+/* Footer */
+footer {
+  background-color: #B850A3;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
   .producto {
-    max-width: 45%;
+    width: 45%;
   }
 }
 
 @media (max-width: 480px) {
   .producto {
-    max-width: 90%;
+    width: 90%;
   }
 }

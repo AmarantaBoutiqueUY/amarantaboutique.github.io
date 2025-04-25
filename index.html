@@ -37,21 +37,6 @@
     </div>
   </section>
 
-  <!-- Nueva sección para cargar productos (solo accesible para ti) -->
-  <section id="cargar-producto">
-    <h2>Cargar Nuevo Producto</h2>
-    <form id="formulario-carga" action="#" method="POST">
-      <label for="producto-imagen">Imagen del Producto:</label>
-      <input type="file" id="producto-imagen" name="imagen" required />
-      <label for="producto-nombre">Nombre del Producto:</label>
-      <input type="text" id="producto-nombre" name="nombre" required />
-      <label for="producto-precio">Precio:</label>
-      <input type="number" id="producto-precio" name="precio" required />
-      <button type="submit" class="btn">Subir Producto</button>
-    </form>
-  </section>
-
-  <!-- Catálogo de productos -->
   <section id="catalogo">
     <h2>Catálogo</h2>
     <div class="productos-galeria" id="productos-galeria">
@@ -73,28 +58,4 @@
     <a href="https://wa.me/59891646801" target="_blank">WhatsApp</a>
     <a href="https://www.instagram.com/amarantaboutiqueuy" target="_blank">Instagram</a>
     <a href="https://www.facebook.com/share/1ESHpDBLkr/" target="_blank">Facebook</a>
-  </footer>
-
-  <script>
-    document.getElementById('formulario-carga').addEventListener('submit', function(event) {
-      event.preventDefault(); // Evitar que se recargue la página
-
-      // Obtener los valores del formulario
-      const imagen = document.getElementById('producto-imagen').files[0];
-      const nombre = document.getElementById('producto-nombre').value;
-      const precio = document.getElementById('producto-precio').value;
-
-      // Validar que el precio sea un valor numérico positivo
-      if (precio <= 0 || isNaN(precio)) {
-        alert("Por favor, ingresa un precio válido.");
-        return;
-      }
-
-      // Aquí puedes agregar la lógica para subir la imagen a un servidor o almacenamiento en la nube
-      // Para este ejemplo, solo mostramos la imagen localmente en la galería
-
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        const imagenUrl = e.target.result;
-
-        // Crear el HTML
+  </

@@ -14,14 +14,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* Reducido */
+  padding: 10px 20px;
   z-index: 1000;
   flex-wrap: wrap;
   gap: 10px;
 }
 
 .logo {
-  height: 45px; /* Reducido */
+  height: 45px;
 }
 
 nav {
@@ -62,7 +62,7 @@ nav a:hover {
 /* HERO SECCIÓN */
 .hero {
   position: relative;
-  padding-top: 120px; /* Más espacio debajo del header */
+  padding-top: 120px;
   height: 85vh;
   overflow: hidden;
 }
@@ -162,7 +162,6 @@ footer a:hover {
   color: #E26A8D;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 2rem;
